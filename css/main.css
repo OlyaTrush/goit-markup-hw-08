@@ -22,7 +22,7 @@ img {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -158,6 +158,25 @@ img {
   fill: currentColor;
   width: 16px;
   height: 12px;
+}
+
+.menu__button {
+  border: none;
+  background-color: #FFFFFF;
+  padding: 0 auto;
+}
+.menu__button .icon-cross {
+  display: none;
+}
+.menu__button.is-open .icon-cross {
+  display: block;
+}
+.menu__button.is-open .icon-menu {
+  display: none;
+}
+
+.icon-cross:hover, .icon-cross:focus, .icon-menu:hover, .icon-menu:focus {
+  fill: #2196F3;
 }
 
 .logo {

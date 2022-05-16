@@ -99,8 +99,31 @@ margin-right: 50px;
     
 }
 
+.menu{
+    @include phone-only{
+        display:none;
+    }
+}
 
-            
-            
-            
-           
+.menu__button {
+    border: none;
+    background-color: $native-color;
+    padding: 0 auto;
+
+    & .icon-cross{
+        display: none;
+    }
+
+    &.is-open .icon-cross{
+        display: block ;}
+
+        &.is-open .icon-menu{
+            display: none;
+        }
+
+}
+
+.icon-cross:hover, .icon-cross:focus, .icon-menu:hover, .icon-menu:focus{
+    fill: $accent-color;
+}
+
