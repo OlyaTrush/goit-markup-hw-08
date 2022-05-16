@@ -1,5 +1,5 @@
 .header-container {
-display: flex;
+display: none;
 align-items: center;
 margin: auto;
 border-bottom: 1px solid $border-color;
@@ -99,13 +99,15 @@ margin-right: 50px;
     
 }
 
-.menu{
-    @include phone-only{
+.menu {
+
+    @include mobile-only{
         display:none;
     }
 }
 
 .menu__button {
+    position: absolute;
     border: none;
     background-color: $native-color;
     padding: 0 auto;
@@ -118,6 +120,10 @@ margin-right: 50px;
         display: block ;}
 
         &.is-open .icon-menu{
+            display: none;
+        }
+        
+        @include tablet{
             display: none;
         }
 

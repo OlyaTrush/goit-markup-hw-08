@@ -1,7 +1,27 @@
 .buttons-list {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+   
+
+    @include tablet {
+      justify-content: center;
+
+    }
+
     margin-bottom: 50px;
+    
+    &__item:first-child {
+        margin-bottom: 15px;
+    }
+    &__item:not(:last-child) {
+        margin-right: 8px;
+    }
+        @include desktop{
+    &__item:first-child {
+        margin-bottom: 0;
+                    }
+        }
+  
 
      &>li:not(:last-child) {
         margin-right: 8px;

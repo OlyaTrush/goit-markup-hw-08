@@ -2,6 +2,20 @@
     padding-top: 0;
     }
     
+    .project-list {
+        display: flex;
+
+        li>:not(:last-child){
+            margin-right: 30px;
+        }
+    }
+    .section.section--project{
+        @media screen and (max-width:1199px)
+    {
+        display: none;
+    }
+    }
+
     .container__title--project {
         margin-bottom: 50px;
         }
@@ -15,7 +29,6 @@
         padding-top: 27px;
         padding-bottom: 27px;
         position: absolute;
-        top:1435px;
 
         &__item{
             font-weight: 700;

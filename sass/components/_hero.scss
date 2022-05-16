@@ -1,4 +1,17 @@
 .hero{
+    text-align: center;
+    padding-top: 118px;
+    padding-bottom: 118px;
+
+    @include desktop {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
+    height: 600px;
+    margin: 0 auto;
+    }
+
+
     background: $dark-bg-color;
     background-image: linear-gradient(
     to right,
@@ -9,11 +22,6 @@
     background-size: cover;
     background-position: center;
     align-items: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    max-width: 1600px;
-    height: 600px;
-    margin: 0 auto;
 
     &__container {
         display: flex;
@@ -21,16 +29,29 @@
         flex-direction: column;
         }
 
-    &__title{
-        margin: 0 auto;
-        width: 696px;
-        font-weight: 900;
-        font-size: 44px;
-        line-height: 1.36;
-        text-align: center;
-        letter-spacing: 0.06em;
-       color: $native-color;
-        text-transform: uppercase;
+        &__title {
+            margin-bottom: 30px;
+            font-weight: 900;
+            font-size: 26px;
+            line-height: 1.62;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: $native-color;
+
+            @include mobile-only {
+               width: 250px;
+                margin: 0 auto 30px auto;
+                    }
+
+            @include smartphone {
+                margin: 0 auto 30px auto;
+            }
+            @include desktop {
+                margin: 0 auto 30px auto;
+                width: 696px;
+                font-size: 44px;
+                line-height: 1.36;
+            }
         }
     
     &__button {

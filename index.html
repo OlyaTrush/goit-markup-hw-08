@@ -94,7 +94,7 @@
         <div class="container">
           <h2 class="section__title">Наши приоритеты</h2>
           <ul class="product-list">
-            <li>
+            <li class="product-list__label">
               <div class="product-label">
                 <svg class="product-label__icon" width="65" height="70">
                   <use href="./images/icons.svg#icon-antenna"></use>
@@ -106,7 +106,7 @@
               </p>
             </li>
 
-            <li>
+            <li class="product-list__label">
               <div class="product-label">
                 <svg class="product-label__icon" width="67" height="70">
                   <use href="./images/icons.svg#icon-clock"></use>
@@ -118,7 +118,7 @@
               </p>
             </li>
 
-            <li>
+            <li class="product-list__label">
               <div class="product-label">
                 <svg class="product-label__icon" width="70" height="54">
                   <use href="./images/icons.svg#icon-diagram"></use>
@@ -130,7 +130,7 @@
               </p>
             </li>
 
-            <li>
+            <li class="product-list__label">
               <div class="product-label">
                 <svg class="product-label__icon" width="55" height="61">
                   <use href="./images/icons.svg#icon-astronaut"></use>
@@ -149,7 +149,7 @@
       <section class="section section--project">
         <div class="container">
           <h2 class="container__title container__title--project ">Чем мы занимаемся</h2>
-          <ul class="product-list">
+          <ul class="project-list">
             <li>
               <img src="./images/FB1(1).jpg" alt="development" width="370" />
               <div class="project-label">
@@ -176,11 +176,10 @@
       <section class="team-section section">
         <div class="container">
           <h2 class="container__title container__title--team">Наша команда</h2>
-          <ul class="product-list">
-            <li class="team">
+          <ul class="team">
+            <li class="team__item">
               <img
-                width="270"
-                height="260"
+              class="team__image"
                 src="./images/FB2(1).jpg"
                 alt="product designer of our team"
               />
@@ -219,10 +218,9 @@
                 </ul>
               </div>
             </li>
-            <li class="team">
+            <li class="team__item">
               <img
-                width="270"
-                height="260"
+              class="team__image""
                 src="./images/FB2(2).jpg"
                 alt="frontend developer of our team"
               />
@@ -261,8 +259,11 @@
                 </ul>
               </div>
             </li>
-            <li class="team">
-              <img width="270" height="260" src="./images/FB2(3).jpg" alt="marketing of our team" />
+            <li class="team__item">
+              <img
+              class="team__image"
+               src="./images/FB2(3).jpg" 
+               alt="marketing of our team" />
               <div class="member-card">
                 <h3 class="member-card__title">Николай Тарасов</h3>
                 <p class="member-card__item">Marketing</p>
@@ -298,10 +299,9 @@
                 </ul>
               </div>
             </li>
-            <li class="team">
+            <li class="team__item">
               <img
-                width="270"
-                height="260"
+              class="team__image"
                 src="./images/FB2(4).jpg"
                 alt="UI designer of our team"
               />

@@ -1,6 +1,14 @@
 .form-footer{
-    width: 570px;
-    margin-left: 93px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 60px;
+  align-items: center;
+
+    @include desktop {
+      width: 570px;
+     margin-left: 93px;
+    }
   }
    
    .subscribe{
@@ -12,20 +20,29 @@
       line-height: 1.14;
       letter-spacing: 0.03em;
       text-transform: uppercase;
+      text-align: center;
       
       color: $native-color;
+     
+
       
       }
 
       &__footer{
-        display: flex;
+        
         justify-content: center;
         align-items: center;
+
+        @include desktop {
+          display: flex;
+          align-items: baseline;
+        }
+
+        
       }
 
        
       &__email{ 
-        width: 358px;
         height: 50px;
         padding: 15px 16px 15px 16px;
         display: flex;
@@ -37,12 +54,32 @@
       background: $dark-bg-color;
       color: $native-color;
       outline: none;
+
+
+      margin-bottom: 20px;
+
+
+      @include mobile-only {
+        width: 200px;
+       
+      }
+
+      @include smartphone {
+        width: 450px;
+       
+
+      }
+
+      @include desktop {
+        width: 358px;
+        margin-right: 12px;
+      }
+
       }
 
       &__button {
         cursor: pointer;
-        
-        margin-left: auto;
+       
         padding: 10px 28px 10px 29px;
         
         width: 200px;
@@ -61,7 +98,17 @@
         font-size: 16px;
         line-height: 1.88;
         border: none;
+
+       @include smartphone {
+        margin: 0 auto;
+       }
         }
+
+        @include tablet {
+          margin-left: 12px;
+        }
+
+
         
         &__icon{
           height: 24px;

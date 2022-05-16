@@ -1,23 +1,49 @@
 .team-section {
     background-color: $bg-btn-portfolio;
-    margin-top: 0;
-    margin-bottom: 0;
+    
+    @include desktop {
+    margin-top: 94px;
+    margin-bottom: 94px;
+    max-height: 1600px;
+    }
+
+
     }
     
     .container__title--team {
     margin-bottom: 50px;
     }
     
-  
-    .team{
+    .team {
+        margin-top: 30px;
+        
+        @include tablet {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        }
+
+        @include desktop {
+         flex-wrap: nowrap;
+         margin-top: 50px;
+        padding-bottom: 0;
+        }
+   
+    &__item{
     background: $native-color;
-    width: 270px;
-    margin-bottom: 0;
+    margin-bottom: 30px;
+
 
     &:not(:last-child) {
         margin-right: 30px;
         }
     }
+
+    &__image{
+       width: 100%;
+    }
+}
     
    
     

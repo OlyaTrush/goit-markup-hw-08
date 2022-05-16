@@ -1,14 +1,62 @@
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
+    flex-basis: 100%;
+
+    @include desktop {
+        justify-content: center;
+        margin-left: -30px;
     }
+
+}
     
     .portfolio-label {
     position: relative;
-    width: 370px;
-    margin-right: 30px;
-    margin-bottom: 30px;
+     width: 100%;
+    
     background: $native-color;
+
+    &:not(:last-child){
+        margin-bottom: 30px;
+    }
+
+    @include tablet{
+        flex-basis: calc((100% - 30px)/2);
+
+         &:nth-child(2n) {
+             margin-left: 30px;
+           }
+
+           &:last-child{
+               margin-top: 30px;
+           }
+    }
+
+    @include desktop {
+
+        width: 294px;
+
+        margin-left: 30px;
+        flex-basis: calc((100% - 90px)/3);
+        &:nth-child(odd) {
+        margin-right: 0;
+        }
+        &:not(:last-child) {
+            margin-bottom: 0px;
+        }
+        &:nth-child(-n + 6) {
+        margin-bottom: 30px;
+        }
+
+        &:last-child{
+            margin-top: -1px;
+        }
+    
+
+    }
+
+    
+
 
     &__link {
         text-decoration: none;
