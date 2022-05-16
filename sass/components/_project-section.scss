@@ -1,0 +1,29 @@
+.section--project {
+    padding-top: 0;
+    }
+    
+    .container__title--project {
+        margin-bottom: 50px;
+        }
+        
+        .project-label{
+        display: block;
+        width: 370px;
+        height: 70px;
+        text-align: center;
+        background: rgba(47, 48, 58, 0.8);
+        padding-top: 27px;
+        padding-bottom: 27px;
+        position: absolute;
+        top:1435px;
+
+        &__item{
+            font-weight: 700;
+            line-height: 1.14;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: $native-color;
+            }
+        
+        }
+        

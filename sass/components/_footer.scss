@@ -1,0 +1,109 @@
+.footer-conteiner{
+    background: $dark-bg-color;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    }
+    
+    
+    .footer-block{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        }
+    
+        .adress{
+             
+         &__list> li:not(:last-child) {
+              margin-bottom: 9px;
+             }
+
+            &__link {
+                display: inline-block;
+                font-style: normal;
+                line-height: 1.714;
+                text-decoration: none;
+                
+                transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            
+                &--contact{
+                
+                    color: $footer-contact-color;
+                    &:hover, &:focus{
+                        color: $accent-color;
+                    }
+                    
+                    }
+                    
+                    &--color{
+                    
+                    color: $native-color;
+                    &:hover, &:focus{
+                        color: $accent-color;
+                    }
+                   }
+                    
+                }
+                
+
+        }
+   
+    
+    
+   
+    
+    .social {
+    margin-left: 70px;
+    justify-content: center;
+
+    &__title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.142;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $native-color;
+        margin-bottom: 20px;
+        }
+
+          
+    &__list {
+        display: flex;
+    
+        &>li:not(:last-child){
+            margin-right: 10px;
+            }
+        }
+
+          
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $native-color;
+        background-color: rgba(255, 255, 255, 0.1);
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover, &:focus {
+            background-color: $accent-color;
+            }
+        }
+
+        &__icon {
+            fill: currentColor;
+            }
+            
+    }
+    
+    
+  
+    
+  
+    
+    
+   
+   
+   

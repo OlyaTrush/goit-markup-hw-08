@@ -1,0 +1,87 @@
+.team-section {
+    background-color: $bg-btn-portfolio;
+    margin-top: 0;
+    margin-bottom: 0;
+    }
+    
+    .container__title--team {
+    margin-bottom: 50px;
+    }
+    
+  
+    .team{
+    background: $native-color;
+    width: 270px;
+    margin-bottom: 0;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+        }
+    }
+    
+   
+    
+    .member-card {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+
+    &__title{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.142;
+        color: $title-text-color;
+        text-align: center;
+        }
+        
+
+     &__item{
+        margin-top: 10px;
+        font-size: 16px;
+        line-height: 1.187;
+        text-align:center;
+        color: $text-color;
+        }
+    }
+    
+    .network-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $icons-color;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+                &:hover,
+                &:focus {
+                         color: $native-color;
+                         background-color: $accent-color;
+             }
+        }
+
+        &__item:not(:last-child) {
+            margin-right: 10px;
+            }
+
+            &__icon {
+                fill: currentColor;
+                }
+    }
+      
+    
+    
+    
+    
+    
+    
+    

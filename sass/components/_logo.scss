@@ -1,0 +1,35 @@
+.logo {
+font-family: $logo-font;
+font-weight: 700;
+font-size: 26px;
+line-height: 1.192;
+text-decoration: none;
+color: $accent-color;
+
+&--header{
+margin-right: 93px;
+padding-top: 24px;
+padding-bottom: 25px;
+}
+
+&--footer {
+display: inline-block;
+margin-bottom: 20px;
+}
+
+&__dark{
+color: $title-text-color;
+}
+
+&__light{
+    color: $native-color;
+    }
+    
+}
+
+
+
+
+
+    
+    

@@ -1,0 +1,43 @@
+body {
+    font-family: $main-font;
+    font-size: 14px;
+    background-color: $native-color;
+    letter-spacing: 0.03em;
+    }
+    
+    p, 
+    h1,
+    h2,
+    h3, 
+    ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    }
+    
+    img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    }
+    
+    .container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    }
+    
+    .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    }
+
+    .container__title{
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.166;
+        text-align: center;
+        color: $title-text-color;
+        }

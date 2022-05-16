@@ -1,0 +1,45 @@
+
+.product-label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
+    background: $bg-btn-portfolio;
+    border-radius: 4px;
+    margin-bottom: 30px;
+
+    &__icon{
+        fill: $title-text-color;
+        }
+    }
+    
+    
+
+    .product-list {
+        display: flex;
+
+        &> li:not(:last-child) {
+            margin-right: 30px;
+            }
+
+            &__title {
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 1.142;
+                color: $title-text-color;
+                text-transform: uppercase;
+                margin-bottom: 10px;
+                }
+                
+
+            &__item{
+                width: 270px;
+                line-height: 1.71;
+                color: $text-color;
+                }
+        } 
+        
+       
+        
+      
