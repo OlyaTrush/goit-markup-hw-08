@@ -6,10 +6,23 @@ line-height: 1.192;
 text-decoration: none;
 color: $accent-color;
 
+@include desktop {
+    font-size: 26px;
+}
+
 &--header{
-margin-right: 93px;
-padding-top: 24px;
-padding-bottom: 25px;
+padding: 16px 0;
+
+@include tablet {
+    padding: 26px 0;
+    margin-right: 88px;
+}
+
+@include desktop {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
+}
 }
 
 &--footer {
@@ -24,7 +37,7 @@ color: $title-text-color;
 &__light{
     color: $native-color;
     }
-    
+
 }
 
 
