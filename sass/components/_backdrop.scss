@@ -84,10 +84,10 @@
   z-index: 20;
   
   
-  @include mobile-only{
-  max-width: 250px;
+ @include mobile-only{
+  width: 80%;
   max-height: 100%;
-  }
+ }
 
   @include smartphone {
   width: 450px;
