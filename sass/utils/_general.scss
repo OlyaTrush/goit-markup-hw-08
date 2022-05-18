@@ -22,14 +22,13 @@ body {
     }
     
     .container {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px;
+        padding-right: 15px;
 
     @include mobile-only {
-        max-width: 480px;
+        width: 480px;
     }
 
     @include smartphone {
@@ -41,7 +40,7 @@ body {
     }
 
     @include desktop {
-        max-width: 1200px;
+        width: 1200px;
     }
     }
 

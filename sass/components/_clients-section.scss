@@ -1,5 +1,6 @@
 .clients-list{
     margin-top: 30px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -22,6 +23,7 @@
 
             flex-basis: calc((100% - 30px )/2);
             margin-right: 30px;
+
             &:nth-child(-n + 5){
                 margin-bottom: 30px;
             }
@@ -38,6 +40,9 @@
 
             @include desktop {
                 flex-wrap: nowrap;
+
+                flex-basis: calc((100% - 180px) / 6);
+
                 &:not(:last-child) {
                 margin-right: 30px;
                 margin-bottom: 0px;
