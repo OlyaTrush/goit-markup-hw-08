@@ -15,6 +15,14 @@
     &__icon{
         fill: $title-text-color;
         }
+
+       @include tablet {
+            width: 354px;
+          }
+        
+          @include desktop {
+            max-width: 270px;
+          }
     }
     
     
