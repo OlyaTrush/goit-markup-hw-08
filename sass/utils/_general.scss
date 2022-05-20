@@ -27,29 +27,26 @@ body {
         padding-left: 15px;
         padding-right: 15px;
 
-    @include mobile-only {
-        width: 480px;
-    }
-
-    @include smartphone {
-        max-width:480px;
-    }
-
-    @include tablet {
-        max-width:768px;
-    }
-
-    @include desktop {
-       max-width: 1200px;
-    }
+        @media screen and (min-width: 768px) {
+            width: 768px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            width: 1200px;
+        }
     }
 
 
     
     .section {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    margin: 0 auto;
+        padding-bottom: 60px;
+        padding-top: 60px;
+    
+        @media screen and (min-width: 1200px) {
+            padding-top: 94px;
+            padding-bottom: 94px;
+        }
+        
 
     }
 
@@ -59,4 +56,14 @@ body {
         line-height: 1.166;
         text-align: center;
         color: $title-text-color;
+       
+        @media screen and (max-width: 1199px){
+            margin-bottom: 30px;
         }
+
+        @include desktop {
+            margin-bottom: 50px;
+        }
+            
+        }
+        
