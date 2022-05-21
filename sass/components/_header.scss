@@ -197,6 +197,7 @@
         padding: 0;
         border: none;
         background-color: transparent;
+        cursor: pointer;
         z-index: 1;
     
         &:hover .menu__icon, &:focus .menu__icon {
