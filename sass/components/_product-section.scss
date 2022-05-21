@@ -9,7 +9,6 @@
      background: $bg-btn-portfolio;
      border-radius: 4px;
      margin-bottom: 30px;
-
      
 
     &__icon{
@@ -33,7 +32,10 @@
          justify-content: center;
 
         &__label{
+           @media screen and (max-width:767px) {
+            padding-bottom: 30px;
 
+           }
             @include tablet {
                 flex-basis: calc((100% - 30px)/2);
                 text-align: left;
@@ -58,10 +60,7 @@
         }
 
     
-        &__item:not(:last-child) {
-            margin-bottom: 30px;
-        }
-    
+       
 
 
             &__title {
@@ -83,6 +82,9 @@
                 width: 100%;
                 line-height: 1.71;
                 color: $text-color;
+
+               
+            
                 }
         } 
         

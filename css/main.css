@@ -1150,6 +1150,11 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media screen and (max-width: 767px) {
+  .product-list__label {
+    padding-bottom: 30px;
+  }
+}
 @media screen and (min-width: 768px) {
   .product-list__label {
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
@@ -1173,9 +1178,6 @@ img {
   .product-list__label:not(:last-child) {
     margin-right: 30px;
   }
-}
-.product-list__item:not(:last-child) {
-  margin-bottom: 30px;
 }
 .product-list__title {
   font-weight: 700;
