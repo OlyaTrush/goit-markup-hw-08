@@ -1,13 +1,11 @@
 .buttons-list {
     display: flex;
     flex-wrap: wrap;
-   
-    @media screen and (max-width:767px) {
-        flex-basis: ((100% - 32px)/3);
-        max-width:480px;
-        margin-bottom: 40px;
-    }
+    margin-bottom: 40px;
 
+    @media screen and (min-width: 768px) {
+    justify-content: center}
+   
     @include tablet {
       justify-content: center;
       margin-bottom: 30px;
@@ -27,13 +25,9 @@
                 //     margin-bottom: 15px;
                 // }
 
-                &:nth-child(5n) {
-                    margin-top: 15px;
-                }
-                
-                &:nth-child(4n) {
-                    margin-top: 15px;
-                }
+               &:first-child{
+                   margin-bottom: 15px;
+               }
             }
      }
     

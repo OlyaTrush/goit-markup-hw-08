@@ -18,7 +18,7 @@
 
     position: relative;
     width: 100%;
-    
+    justify-content: center;
     background: $native-color;
 
     &:not(:last-child) {
