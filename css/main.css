@@ -34,12 +34,12 @@ img {
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 
@@ -617,6 +617,11 @@ img {
 .buttons-list__label:not(:last-child) {
   margin-right: 8px;
 }
+@media screen and (max-width: 479px) {
+  .buttons-list__label {
+    margin-bottom: 15px;
+  }
+}
 @media screen and (max-width: 767px) {
   .buttons-list__label:first-child {
     margin-bottom: 15px;
@@ -662,9 +667,6 @@ img {
 .portfolio-label {
   position: relative;
   width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   background: #FFFFFF;
 }
 @media screen and (max-width: 767px) {
@@ -693,9 +695,6 @@ img {
 @media (min-width: 768px) and (max-width: 1199px) {
   .portfolio-label:nth-child(2n) {
     margin-right: 0;
-  }
-  .portfolio-label:nth-child(n+8) {
-    margin-bottom: 0;
   }
   .portfolio-label:nth-child(8) {
     height: 100%;
