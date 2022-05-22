@@ -2,11 +2,15 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 60px;
+ 
   align-items: center;
 
+  @media screen and (max-width:767px) {
+    margin-top: 60px;
+  }
+
     @include desktop {
-      width: 570px;
+    width: 570px;
      margin-left: 93px;
     }
   }
@@ -56,8 +60,10 @@
       color: $native-color;
       outline: none;
 
-
-      margin-bottom: 20px;
+      @media screen and (max-width:1199px){
+        margin-bottom: 20px;
+      }
+     
 
 
       @include mobile-only {

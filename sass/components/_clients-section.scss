@@ -10,7 +10,8 @@
       margin-right: 30px;
       margin-bottom: 30px;
 
-    @include mobile-only {
+    @media screen and (max-width:767px) {
+        
         flex-basis: calc((100% - 30px) / 2);
 
         &:nth-child(2n) {
@@ -22,19 +23,6 @@
         }
     }
 
-    @media screen and (min-width: 481px) and (max-width: 767px) {
-        margin-right: 16px;
-        margin-bottom: 16px;
-        flex-basis: calc((100% - 2*16px) / 3);
-
-        &:nth-child(3n) {
-            margin-right: 0;
-        }
-
-        &:nth-child(n+4) {
-            margin-bottom: 0;
-        }
-    }
 
     @include tablet {
         display: inline-flex;

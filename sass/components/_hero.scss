@@ -108,9 +108,12 @@ background-image: linear-gradient(to right,
             color: $native-color;
 
             @include mobile-only {
-               width: 250px;
+              max-width: 360px;
              }
 
+             @include smartphone {
+                 width: 360px;
+             }
            
             @include desktop {
                 width: 696px;
@@ -120,7 +123,6 @@ background-image: linear-gradient(to right,
         }
     
     &__button {
-        margin-top: 30px;
         padding: 10px 32px;
         border: none;
         cursor: pointer;

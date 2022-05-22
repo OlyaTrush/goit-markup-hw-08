@@ -2,7 +2,8 @@
     background: $dark-bg-color;
     padding-top: 60px;
     padding-bottom: 60px;
-   
+
+
     }
     
     
@@ -20,17 +21,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
     line-height: 1.71;
 
     }
         .adress{
-
-            @include mobile-only {
-                margin-bottom: 60px;
-            }
             
-            @include smartphone {
+            @media screen and (max-width:1199px) {
+              
                 margin-bottom: 60px;
             }
 

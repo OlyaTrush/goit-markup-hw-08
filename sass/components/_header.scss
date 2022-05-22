@@ -2,7 +2,7 @@
 
     position: relative;
     border-bottom: 1px solid $border-color;
-
+    
     }
     
     .main-nav {
@@ -32,9 +32,7 @@
 
            
         }
-    
-           
-        
+   
     
     }
     
@@ -113,7 +111,7 @@
     &__link {
         
           color: $text-color;
-         
+          text-decoration: none;
        
            @media screen and (min-width: 480px) and (max-width: 767px)  {
                font-size: 34px;
@@ -170,20 +168,21 @@
     
     &__icon{
         fill: currentColor;
-        width: 16px;
-        height: 12px;
-
         display: none;
     
 
         @include tablet {
             display: inline-flex;
             fill: currentColor;
+            width: 14px;
+            height: 14px;
             margin-right: 8px;
         }
     
         @include desktop {
             margin-right: 10px;
+            width: 16px;
+            height: 16px;
         }
         }
 
