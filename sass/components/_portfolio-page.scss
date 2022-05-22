@@ -1,11 +1,10 @@
 .portfolio-list {
-    // @media screen and (min-width: 481px) and (max-width: 767px) {
-    //     display: flex;
-    //     flex-direction: row;
-    //     flex-wrap: wrap;
-    // }
 
-    align-items: center;
+    @media screen and (min-width: 481px) and (max-width: 767px) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 
     @include tablet {
         display: flex;
@@ -17,7 +16,8 @@
     .portfolio-label {
 
     position: relative;
-    width: 100%;
+     width: 100%;
+    
     background: $native-color;
 
     &:not(:last-child) {
@@ -26,14 +26,7 @@
         }
     }
 
-    @media screen and (min-width: 505px) and (max-width: 767px) {
-        flex-basis: calc((100% - 10px) / 2);
-        margin-right: 10px;
-
-        &:nth-child(2n), &:last-child {
-            margin-right: 0;
-        }
-    }
+    
     
     @include tablet {
         margin-right: 30px;
@@ -45,6 +38,10 @@
 
         &:nth-child(2n) {
             margin-right: 0;
+        }
+
+        &:nth-child(n+8) {
+            margin-bottom: 0;
         }
 
         &:nth-child(8) {
@@ -140,7 +137,8 @@
         top: 0;
         left: 0;
         width: 100%;
-        height: 100%;
+        height: 294px;
+        padding: 63px 24px;
         opacity: 0;
         visibility: hidden;
         
@@ -163,6 +161,7 @@
 
      @include mobile-only {
         padding: 24px 16px;
+        overflow: scroll;
        
     }
 

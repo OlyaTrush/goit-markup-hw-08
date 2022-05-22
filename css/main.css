@@ -649,10 +649,18 @@ img {
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.portfolio-list {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .portfolio-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 @media screen and (min-width: 768px) {
   .portfolio-list {
@@ -674,16 +682,6 @@ img {
     margin-bottom: 30px;
   }
 }
-@media screen and (min-width: 505px) and (max-width: 767px) {
-  .portfolio-label {
-    -ms-flex-preferred-size: calc((100% - 10px) / 2);
-        flex-basis: calc((100% - 10px) / 2);
-    margin-right: 10px;
-  }
-  .portfolio-label:nth-child(2n), .portfolio-label:last-child {
-    margin-right: 0;
-  }
-}
 @media screen and (min-width: 768px) {
   .portfolio-label {
     margin-right: 30px;
@@ -695,6 +693,9 @@ img {
 @media (min-width: 768px) and (max-width: 1199px) {
   .portfolio-label:nth-child(2n) {
     margin-right: 0;
+  }
+  .portfolio-label:nth-child(n+8) {
+    margin-bottom: 0;
   }
   .portfolio-label:nth-child(8) {
     height: 100%;
@@ -791,7 +792,8 @@ img {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 294px;
+  padding: 63px 24px;
   opacity: 0;
   visibility: hidden;
   font-weight: 400;
@@ -815,6 +817,7 @@ img {
 @media screen and (max-width: 479px) {
   .overlay-card__text {
     padding: 24px 16px;
+    overflow: scroll;
   }
 }
 @media screen and (min-width: 480px) {
